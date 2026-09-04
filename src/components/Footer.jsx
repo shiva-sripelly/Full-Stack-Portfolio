@@ -1,0 +1,1 @@
+export default function Footer(){return <footer><p className="brand"><span>$</span> shiva.</p><p className="footer-motto">// Keep Learning. Keep Building. //</p><p>© {new Date().getFullYear()} Shiva Chary. All rights reserved.</p></footer>}

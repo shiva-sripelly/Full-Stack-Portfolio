@@ -1,0 +1,4 @@
+import { Database } from 'lucide-react';
+import SectionTitle from './SectionTitle';
+const Box=({children,cls=''})=><div className={`arch-box ${cls}`}>{children}</div>;
+export default function Architecture(){return <section className="section half"><SectionTitle id="architecture" title="architecture" comment="System architecture overview"/><div className="architecture"><div className="arch-services left"><Box>Authentication<br/>Service</Box><Box>Booking<br/>Service</Box><Box>Payment<br/>Service</Box></div><div className="arch-core"><Box cls="frontend">React Frontend</Box><span>&#8597;</span><small>REST API</small><span>&#8597;</span><Box cls="fastapi">FastAPI<br/><small>(Application Layer)</small></Box><span>&#8597;</span><Box cls="database"><Database/>PostgreSQL<br/><small>(Database)</small></Box></div><div className="arch-services right"><Box>Email / OTP</Box><Box>Stripe</Box><Box>AI / LLM / MCP</Box><Box>WebSockets</Box></div></div></section>}
