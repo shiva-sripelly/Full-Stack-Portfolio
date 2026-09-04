@@ -21,3 +21,76 @@
 .timeline-content li+li{margin-top:3px}
 @media(max-width:480px){.timeline article{grid-template-columns:1fr}.period{padding:0 0 8px 26px}.timeline-content{margin-left:5px}}
 .social-unavailable{display:flex;align-items:center;gap:14px;opacity:.45;cursor:not-allowed}.contact-links .social-unavailable{font-size:10px;gap:18px}.contact-links .social-unavailable svg{width:18px;height:18px}
+
+/* Light theme overrides. Dark-theme declarations above remain unchanged. */
+.light{--bg:#f5f7fb;--bg2:#fff;--card:#fff;--border:#cbd5e1;--text:#111827;--muted:#64748b;--purple:#9333ea;--violet:#7c3aed;--cyan:#0891b2;--green:#059669;--blue:#2563eb;color-scheme:light}
+.light body{background:#f5f7fb;color:#111827}
+.light .navbar{background:rgba(255,255,255,.92);border-bottom-color:#dbe3ee;box-shadow:0 4px 18px rgba(15,23,42,.04)}
+.light .brand{color:#111827}
+.light nav{color:#475569}
+.light nav a:hover{color:#9333ea}
+.light .theme,.light .menu{color:#475569}
+.light .bio{color:#475569}
+.light .role{color:#a21caf}
+.light .side-card,.light .skill-card,.light .project-card,.light .architecture,.light .timeline,.light .contact-card{background:#fff;border-color:#cbd5e1;color:#111827;box-shadow:0 4px 18px rgba(15,23,42,.06)}
+.light .side-card h3{border-bottom-color:#dbe3ee;color:#a21caf}
+.light .social-grid a{color:#111827}
+.light .social-grid a:hover{color:#7e22ce;background:#faf5ff}
+.light .social-grid a:nth-child(2) svg{color:#0f172a}
+.light .social-grid a:nth-child(3) svg,.light .social-grid a:nth-child(4) svg{color:#334155}
+.light .status p{color:#1e293b}
+.light .status .available{color:#047857}
+.light .dev-banner{background:#fff;border-color:#94a3b8;color:#111827}
+.light .section-title p{color:#64748b}
+.light .skill-card ul{color:#334155}
+.light .skill-card:hover{border-color:#9333ea;box-shadow:0 8px 28px rgba(147,51,234,.1)}
+.light .skill-card h3{color:#a21caf}
+.light .project-copy>p{color:#475569}
+.light .project-copy h3{color:#047857}
+.light .chips span{background:#f0f9ff;border-color:#0891b2;color:#0e7490}
+.light .features p{color:#334155}
+.light .features h3{border-bottom-color:#dbe3ee;color:#a21caf}
+.light .features p svg{color:#059669}
+.light .arch-box{background:#f8fafc;border-color:#0284c7;color:#0f172a}
+.light .arch-services.left .arch-box:after,.light .arch-services.right .arch-box:before{border-color:#64748b}
+.light .arch-core>span,.light .arch-core>small{color:#64748b}
+.light .arch-box.database svg{color:#0284c7}
+.light .period{color:#64748b}
+.light .timeline-content{color:#1e293b}
+.light .timeline-content h4{color:#334155}
+.light .timeline-content .institution,.light .timeline-content .entry-meta{color:#64748b}
+.light .timeline-content .technologies{color:#0e7490}
+.light .timeline-content .entry-description,.light .timeline-content ul{color:#334155}
+.light .timeline-content .supporting{color:#475569}
+.light .contact-card h2{color:#111827}
+.light .contact-card p{color:#334155}
+.light .contact-links{border-color:#cbd5e1}
+.light .contact-links a{color:#1e293b}
+.light .button.secondary{background:#fff;color:#1e293b;border-color:#9333ea}
+.light .button.secondary:hover{background:#faf5ff}
+.light .button.primary{color:#fff}
+.light footer{border-color:#cbd5e1;color:#475569}
+.light footer .brand{color:#111827}
+.light .footer-motto{color:#6d28d9}
+@media(max-width:760px){.light nav{background:#fff;border-bottom-color:#dbe3ee}}
+
+/* Root-qualified safeguards for the existing html.light theme switch. */
+html.light body{background:#f4f7fb;color:#0f172a}
+html.light .navbar{background:rgba(255,255,255,.95);border-bottom-color:#dbe4ee}
+html.light .navbar nav{color:#475569}
+html.light .navbar .theme{color:#9333ea}
+html.light .connect,html.light .status,html.light .skill-card,html.light .project-card,html.light .architecture,html.light .timeline,html.light .contact-card{background:#fff;color:#0f172a;border-color:#cbd5e1}
+html.light .connect,html.light .status{box-shadow:0 4px 18px rgba(15,23,42,.05)}
+html.light .skill-card{box-shadow:0 3px 12px rgba(15,23,42,.04)}
+html.light .connect .social-grid a{color:#0f172a}
+html.light .connect .social-grid a:hover{background:#f8fafc;color:#9333ea}
+html.light .status h3{color:#9333ea}
+html.light .status p:not(.available){color:#1e293b}
+html.light .status p:not(.available) svg{color:#334155}
+html.light .arch-box{background:#f8fafc;color:#0f172a;border-color:#0284c7}
+html.light .arch-services.left .arch-box:after,html.light .arch-services.right .arch-box:before{border-color:#94a3b8}
+html.light .arch-core>span,html.light .arch-core>small{color:#475569}
+html.light .timeline-content ul{color:#334155}
+html.light .dev-banner{background:#fff;color:#0f172a;border-color:#cbd5e1}
+html.light .chips span{background:#f8fafc;border-color:#94a3b8;color:#334155}
+@media(max-width:760px){html.light .navbar nav{background:#fff;border-bottom-color:#dbe4ee}}
