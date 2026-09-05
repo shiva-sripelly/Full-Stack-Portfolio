@@ -16,3 +16,4 @@ I came across your portfolio and would like to discuss a potential opportunity w
 Regards,`;
 
 export const emailComposeLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(portfolioConfig.email)}&su=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+export const emailLink = `mailto:${portfolioConfig.email}`;
