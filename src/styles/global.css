@@ -21,6 +21,7 @@
 .timeline-content li+li{margin-top:3px}
 @media(max-width:480px){.timeline article{grid-template-columns:1fr}.period{padding:0 0 8px 26px}.timeline-content{margin-left:5px}}
 .social-unavailable{display:flex;align-items:center;gap:14px;opacity:.45;cursor:not-allowed}.contact-links .social-unavailable{font-size:10px;gap:18px}.contact-links .social-unavailable svg{width:18px;height:18px}
+.social-grid a{cursor:pointer}.social-grid a svg,.social-grid a span{pointer-events:none}
 
 /* Light theme overrides. Dark-theme declarations above remain unchanged. */
 .light{--bg:#f5f7fb;--bg2:#fff;--card:#fff;--border:#cbd5e1;--text:#111827;--muted:#64748b;--purple:#9333ea;--violet:#7c3aed;--cyan:#0891b2;--green:#059669;--blue:#2563eb;color-scheme:light}
